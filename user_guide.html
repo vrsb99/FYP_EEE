@@ -1,0 +1,39 @@
+<section id="user-guide">
+    <h2>User Guide</h2>
+    <p>Welcome to the Optimal Portfolio Allocation tool. This guide will help you navigate and effectively utilize the system to analyze and optimize asset allocations using various financial models.</p>
+
+    <h3>Getting Started</h3>
+    <p>Access the live demo of the application <a href="https://vrsbfyp.me/">here</a>. This link takes you to the main interface where you can interact with different components of the system.</p>
+
+    <h3>Overview of Components</h3>
+    <p>The system is divided into two main components: the backend, which handles data collection, preprocessing, and optimization algorithms, and the frontend, which provides the user interface for interaction.</p>
+
+    <h4>Backend Components: Code for Generating Analysis Data</h4>
+    <ul>
+        <li><strong>00_download_all_files.py:</strong> Initiates the process by downloading all necessary datasets from DigitalOcean Spaces, ensuring that the frontend has access to the latest data for analysis.</li>
+        <li><strong>01_obtain_tickers.py:</strong> Downloads and stores ticker symbols from TopForeignStocks.com, which are crucial for retrieving financial data for various equities.</li>
+        <li><strong>02_obtain_data.py:</strong> Fetches and stores technical data from Yahoo Finance using the ticker symbols obtained, providing the raw data needed for subsequent analysis.</li>
+        <li><strong>03_ranking_equities.py:</strong> Ranks equities based on the Sharpe Ratio, a critical step in identifying top-performing stocks for portfolio optimization.</li>
+        <li><strong>04_test_models.py:</strong> Tests different allocation models for a quarterly period, allowing for the evaluation of various strategies under recent market conditions.</li>
+        <li><strong>05_validation.py:</strong> Conducts backtesting of each model on a rolling basis over a given period to validate their historical performance and robustness.</li>
+        <li><strong>06_upload_app.py:</strong> Uploads all generated data to DigitalOcean Spaces for backup and easy access across different platforms.</li>
+        <li><strong>07_review.ipnb:</strong> Notebook for reviewing the results of the models and generating graphs, facilitating a visual understanding of performance.</li>
+        <li><strong>08_other_backtest.ipynb:</strong> Used for reviewing additional backtesting results and generating detailed graphs for comprehensive analysis.</li>
+    </ul>
+
+    <h4>Frontend Components: Navigating the Website</h4>
+    <ul>
+        <li><strong>Main Page:</strong> Provides a dashboard for real-time analysis of financial models and asset allocations.</li>
+        <li><strong>Ranking Equities:</strong> Allows users to view and interact with the rankings of equities based on their Sharpe Ratios.</li>
+        <li><strong>Studying Models:</strong> Enables detailed examination of various allocation models and their performance under different scenarios.</li>
+        <li><strong>Model Validation:</strong> Offers tools to validate the performance of models over time using historical data.</li>
+    </ul>
+
+    <h3>Interacting with the Frontend</h3>
+    <p>Use the sidebar to navigate between different pages. Each page provides interactive elements such as dropdowns, sliders, and buttons that allow you to customize the analysis according to your needs.</p>
+
+    <h3>Viewing and Analyzing Results</h3>
+    <p>Results of the analyses can be viewed directly on the frontend in the form of tables, charts, and graphs. These visualizations provide insightful perspectives on the data and model performances.</p>
+
+    <p>Thank you for using the Optimal Portfolio Allocation tool. We hope it serves your needs effectively in selecting the most optimal model and risk measure to improve investment decisions.</p>
+</section>

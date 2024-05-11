@@ -1,0 +1,55 @@
+<section id="installation-guide">
+    <h2>Installation Guide</h2>
+    <p>This guide will assist you with the setup and installation of the necessary components for the Optimal Portfolio Allocation project.</p>
+
+    <h3>Prerequisites</h3>
+    <p>Before beginning the installation, ensure you have administrative access on your computer and a stable internet connection for downloading the necessary software and packages.</p>
+
+    <h3>Step 1: Installing Python and Anaconda</h3>
+    <p>You can choose to install Python directly or via Anaconda. Anaconda simplifies package management and deployment.</p>
+
+    <h4>Option 1: Install Python Directly</h4>
+    <ol>
+        <li>Visit the official Python download page at <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></li>
+        <li>Download and install Python 3.11. Ensure to check 'Add Python 3.11 to PATH' during installation.</li>
+    </ol>
+
+    <h4>Option 2: Install Anaconda</h4>
+    <ol>
+        <li>Download Anaconda for Python 3.11 from <a href="https://www.anaconda.com/products/individual">Anaconda's website</a>.</li>
+        <li>Follow the on-screen instructions to install Anaconda. Include Anaconda in your system's PATH to make it the default Python interpreter.</li>
+    </ol>
+
+    <h3>Step 2: Set Up the Project Environment</h3>
+    <p>Create a virtual environment to manage the dependencies for the project separately from other Python projects.</p>
+
+    <h4>Using Python</h4>
+    <pre><code>python -m venv myenv
+myenv\Scripts\activate (Windows)
+source myenv/bin/activate (Mac/Linux)</code></pre>
+
+    <h4>Using Anaconda</h4>
+    <pre><code>conda create --name myenv python=3.11
+conda activate myenv</code></pre>
+
+    <h3>Step 3: Install Required Python Packages</h3>
+    <p>Install all required packages specified in the requirements.txt file.</p>
+    <pre><code>pip install -r requirements.txt</code></pre>
+
+    <h3>Step 4: Clone the Repository</h3>
+    <p>Clone the project repository to your local machine using Git.</p>
+    <pre><code>git clone https://github.com/vrsb99/FYP_EEE.git
+cd FYP_EEE</code></pre>
+
+    <h3>Step 4: Environment Variables</h3>
+    <p>Set up the necessary environment variables.</p>
+    <pre><code>cp .env.example .env
+# Edit .env file with your credentials</code></pre>
+
+    <h3>Step 6: Run the Application</h3>
+    <p>Start the application using Streamlit.</p>
+    <pre><code>cd frontend
+streamlit run app.py</code></pre>
+
+    <p>Follow these detailed steps to ensure a complete and functional setup of the Optimal Portfolio Allocation project on your system.</p>
+</section>

@@ -1,0 +1,38 @@
+version: '3.8'
+services:
+  frontend:
+    build:
+      context: ./frontend
+    volumes:
+      - ./frontend:/app
+    environment:
+      ACCESS_KEY: ${ACCESS_KEY}
+      SECRET_KEY: ${SECRET_KEY}
+      REGION_NAME: ${REGION_NAME}
+      ENDPOINT_URL: ${ENDPOINT_URL}
+      BUCKET_NAME: ${BUCKET_NAME}
+    ports:
+      - "8501:8501"
+    networks:
+      - datasharing
+    env_file:
+      - .env
+
+  backend:
+    build:
+      context: ./backend
+    volumes:
+      - ./backend:/app
+    environment:
+      ACCESS_KEY: ${ACCESS_KEY}
+      SECRET_KEY: ${SECRET_KEY}
+      REGION_NAME: ${REGION_NAME}
+      ENDPOINT_URL: ${ENDPOINT_URL}
+      BUCKET_NAME: ${BUCKET_NAME}
+    networks:
+      - datasharing
+    env_file:
+      - .env
+
+networks:
+  datasharing:

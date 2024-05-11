@@ -1,0 +1,16 @@
+altair==5.3.0
+boto3==1.34.74
+botocore==1.34.74
+matplotlib==3.8.3
+numpy==1.26.4
+pandas==2.2.1
+pandas_market_calendars==4.4.0
+plotly==5.19.0
+python-dotenv==1.0.1
+QuantStats==0.0.62
+Riskfolio_Lib==6.0.0
+scipy==1.13.0
+st_pages==0.4.5
+streamlit==1.34.0
+vectorbt==0.26.0
+yfinance==0.2.37
